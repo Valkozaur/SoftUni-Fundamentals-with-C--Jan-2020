@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03.Exact_Sum_of_Real_Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int countOfInputs = int.Parse(Console.ReadLine());
+            decimal totalSum = 0;
+
+            for (int i=0; i<countOfInputs; i++)
+            {
+                decimal currentNumberInput = decimal.Parse(Console.ReadLine());
+                totalSum += currentNumberInput;
+            }
+
+            Console.WriteLine(totalSum);
+        }
+    }
+}
