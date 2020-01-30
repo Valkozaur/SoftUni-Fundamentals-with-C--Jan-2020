@@ -1,0 +1,27 @@
+using System;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1.Integer Operations
+
+            int[] integerNumbers = new int[4];
+
+            double result = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                integerNumbers[i] = int.Parse(Console.ReadLine());
+            }
+
+            result = integerNumbers[0] + integerNumbers[1];
+            result /= integerNumbers[2];
+            result *= integerNumbers[3];
+
+            Console.WriteLine(result);
+        }
+    }
+}
