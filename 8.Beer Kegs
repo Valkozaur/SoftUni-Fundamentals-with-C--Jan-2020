@@ -11,34 +11,27 @@ namespace Data_Types_and_Basic_Syntax___Exercise
             //8.Beer Kegs
 
             int numberOfLines = int.Parse(Console.ReadLine());
-            List<Keg> Kegs = new List<Keg>(numberOfLines);
-                
+
+            string bestModel = String.Empty;
+            double bestVolume = 0.0;
 
             for (int i = 0; i < numberOfLines; i++)
             {
-                string model = Console.ReadLine();
-                double radius = double.Parse(Console.ReadLine());
-                double height = double.Parse(Console.ReadLine());
+                string currentModel = Console.ReadLine();
+                double currentRadius = double.Parse(Console.ReadLine());
+                double currentHeight = double.Parse(Console.ReadLine());
 
-                double currentKegVolume = Math.PI * Math.Pow(radius, 2) * height;
+                double currentVolume = Math.PI * Math.Pow(currentRadius, 2) * currentHeight;
 
-                Keg keg = new Keg(model, currentKegVolume);
-                Kegs[i] = keg;
+                if (currentVolume > bestVolume)
+                {
+                    bestModel = currentModel;
+                    bestVolume = currentVolume;
+                }
             }
 
-            Console.WriteLine();
+            Console.WriteLine(bestModel);
 
         }
-    }
-
-    class Keg
-    {
-        public Keg(string model, double volume)
-        {
-            Model = model;
-            Volume = volume;
-        }
-        public static string Model { get; set; }
-        public static double Volume { get; set; }
     }
 }
