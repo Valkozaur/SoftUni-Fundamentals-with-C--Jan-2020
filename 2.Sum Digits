@@ -1,0 +1,24 @@
+using System;
+using System.Linq;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //2.Sum Digits
+
+            int numberInput = int.Parse(Console.ReadLine());
+            int result = 0;
+
+            while(numberInput != 0)
+            {
+                result += numberInput % 10;
+                numberInput /= 10;
+            }
+
+            Console.WriteLine(result);
+        }
+    }
+}
