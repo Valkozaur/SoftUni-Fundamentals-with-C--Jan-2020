@@ -1,0 +1,40 @@
+using System;
+using System.Linq;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //7.Water Overflow
+
+            int numberOfLines = int.Parse(Console.ReadLine());
+            int tankCapacityLiters = 255;
+            int totalLitersPoured = 0;
+            
+
+            for (int i = 0; i < numberOfLines; i++)
+            {
+                bool tankIsFull = false;
+                int pourLiters = int.Parse(Console.ReadLine());
+                if (tankCapacityLiters >= totalLitersPoured + pourLiters)
+                {
+                    totalLitersPoured += pourLiters;
+                }
+                else
+                {
+                    tankIsFull = true;
+                }
+
+                if (tankIsFull)
+                {
+                    Console.WriteLine("Insufficient capacity!");
+                }
+            }
+
+            Console.WriteLine(totalLitersPoured);
+
+        }
+    }
+}
