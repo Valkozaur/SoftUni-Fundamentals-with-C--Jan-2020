@@ -1,0 +1,39 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //10.Poke Mon 
+
+            int pokePower = int.Parse(Console.ReadLine());
+            int currentPokePower = pokePower;
+            int distanceBetweenTargets = int.Parse(Console.ReadLine());
+            int exhaustionFactor = int.Parse(Console.ReadLine());
+
+            bool divionIsExact = false;
+            int pokedTargets = 0;
+
+            while (currentPokePower >= distanceBetweenTargets)
+            {
+                currentPokePower -= distanceBetweenTargets;
+                pokedTargets++;
+
+                if (pokePower != 0)
+                {
+                    divionIsExact = pokePower / 2 == currentPokePower;
+                }
+                if (divionIsExact && currentPokePower != 0 && exhaustionFactor != 0)
+                {
+                    currentPokePower /= exhaustionFactor;
+                }
+            }
+
+            Console.WriteLine(currentPokePower + Environment.NewLine + pokedTargets);
+        }
+    }
+}
