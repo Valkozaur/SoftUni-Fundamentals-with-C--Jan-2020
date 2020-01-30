@@ -1,0 +1,39 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Numerics;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //11.Snowballs 
+
+            int numberOfSnowballs = int.Parse(Console.ReadLine());
+
+            BigInteger highestSnowballValue = 0;
+            string bestSnowball = String.Empty;
+
+            for (int i = 0; i < numberOfSnowballs; i++)
+            {
+                int snowballSnow = int.Parse(Console.ReadLine());
+                int snowballTime = int.Parse(Console.ReadLine());
+                int snowballQuality = int.Parse(Console.ReadLine());
+
+                BigInteger snowballValue = BigInteger.Pow((snowballSnow / snowballTime), (snowballQuality));
+
+                if (highestSnowballValue < snowballValue)
+                {
+                    highestSnowballValue = snowballValue;
+
+                    string currentBest = $"{snowballSnow} : {snowballTime} = {highestSnowballValue} ({snowballQuality})";
+                    bestSnowball = currentBest;
+                }
+            }
+
+            Console.WriteLine(bestSnowball);
+        }
+    }
+}
