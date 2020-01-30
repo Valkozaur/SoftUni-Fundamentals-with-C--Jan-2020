@@ -1,0 +1,25 @@
+using System;
+using System.Linq;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //4.Sum of Chars
+
+            int numberOfChars = int.Parse(Console.ReadLine());
+            int totalSum = 0;
+
+            for (int i = 0; i < numberOfChars; i++)
+            {
+                char currentChar = char.Parse(Console.ReadLine());
+                totalSum += (int)currentChar;
+            }
+                
+            Console.WriteLine($"The sum equals: {totalSum}");
+
+        }
+    }
+}
