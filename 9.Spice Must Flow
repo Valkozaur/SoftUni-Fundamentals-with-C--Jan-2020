@@ -1,0 +1,34 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //9.Spice Must Flow 
+
+            int startingYield = int.Parse(Console.ReadLine());
+            int days = 0;
+            int totalAmount = 0;
+
+            while (startingYield >= 100)
+            {
+                days++;
+                totalAmount += startingYield;
+                startingYield -= 10;
+
+                totalAmount -= 26;
+            }
+
+            if (totalAmount >= 26)
+            {
+                totalAmount -= 26;
+            }
+
+            Console.WriteLine(days + Environment.NewLine + totalAmount);
+        }
+    }
+}
