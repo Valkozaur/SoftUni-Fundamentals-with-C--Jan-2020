@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+
+namespace Data_Types_and_Basic_Syntax___Exercise
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //6.Triples of Latin Letters
+
+            int n = int.Parse(Console.ReadLine());
+
+            for (int first = 0; first < n; first++)
+            {
+                for (int second = 0; second < n; second++)
+                {
+                    for (int third = 0; third < n; third++)
+                    {
+                        Console.WriteLine($"{(char)(97 + first)}{(char)(97 + second)}{(char)(97 + third)}");
+                    }
+                }
+            }
+
+        }
+    }
+}
