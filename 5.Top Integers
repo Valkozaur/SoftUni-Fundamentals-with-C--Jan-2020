@@ -16,7 +16,7 @@ namespace _5._Top_Integers
             for (int currentInteger = 0; currentInteger < arrayInput.Length; currentInteger++)
             {
 
-                bool isTopInteger = true;
+                var isTopInteger = true;
 
                 for (int integerToCheck = currentInteger + 1; integerToCheck < arrayInput.Length; integerToCheck++)
                 {
