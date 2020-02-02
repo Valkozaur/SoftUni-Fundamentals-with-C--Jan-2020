@@ -23,11 +23,12 @@ namespace _6._Equal_Sums
                 {
                     sumLeft += inputArray[k];
 
-                    if (sumRight == sumLeft)
-                    {
-                        Console.WriteLine(i);
-                        return;
-                    }
+                }
+
+                if (sumRight == sumLeft)
+                {
+                    Console.WriteLine(i);
+                    return;
                 }
 
                 sumRight += currentNumber;
@@ -37,3 +38,4 @@ namespace _6._Equal_Sums
         }
     }
 }
+
