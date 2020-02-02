@@ -1,0 +1,39 @@
+using System;
+using System.Linq;
+
+namespace _6._Equal_Sums
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var inputArray = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
+
+            var sumRight = 0;
+
+            for (var i = 0; i < inputArray.Length; i++)
+            {
+                var currentNumber = inputArray[i];
+                var sumLeft = 0;
+
+                for (int k = i + 1; k < inputArray.Length; k++)
+                {
+                    sumLeft += inputArray[k];
+
+                    if (sumRight == sumLeft)
+                    {
+                        Console.WriteLine(i);
+                        return;
+                    }
+                }
+
+                sumRight += currentNumber;
+            }
+
+            Console.WriteLine("no");
+        }
+    }
+}
