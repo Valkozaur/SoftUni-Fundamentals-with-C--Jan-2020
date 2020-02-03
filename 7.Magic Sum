@@ -1,0 +1,33 @@
+using System;
+using System.Linq;
+
+namespace _7._Magic_Sum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var inputSequence = Console.ReadLine()
+                .Split()
+                .Select(int.Parse)
+                .ToArray();
+
+            var magicSum = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < inputSequence.Length; i++)
+            {
+                var currentNumber = inputSequence[i];
+
+                for (int k = i + 1; k < inputSequence.Length; k++)
+                {
+                    var nextNumber = inputSequence[k];
+
+                    if (currentNumber + nextNumber == magicSum)
+                    {
+                        Console.WriteLine(currentNumber + " " + nextNumber);
+                    }
+                }
+            }
+        }
+    }
+}
