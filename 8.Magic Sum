@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace _7._Magic_Sum
+namespace _8._Magic_Sum
 {
     class Program
     {
