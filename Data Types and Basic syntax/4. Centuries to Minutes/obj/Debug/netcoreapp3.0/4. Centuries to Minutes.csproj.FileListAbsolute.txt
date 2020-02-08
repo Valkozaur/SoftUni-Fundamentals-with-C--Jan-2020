@@ -1,0 +1,11 @@
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.exe
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.deps.json
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.runtimeconfig.json
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.runtimeconfig.dev.json
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.dll
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\bin\Debug\netcoreapp3.0\4. Centuries to Minutes.pdb
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\obj\Debug\netcoreapp3.0\4. Centuries to Minutes.csprojAssemblyReference.cache
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\obj\Debug\netcoreapp3.0\4. Centuries to Minutes.AssemblyInfoInputs.cache
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\obj\Debug\netcoreapp3.0\4. Centuries to Minutes.AssemblyInfo.cs
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\obj\Debug\netcoreapp3.0\4. Centuries to Minutes.dll
+C:\Users\valni\OneDrive\Desktop\SoftUni\Fund-Jan-2020\Data Types and Basic syntax\4. Centuries to Minutes\obj\Debug\netcoreapp3.0\4. Centuries to Minutes.pdb
