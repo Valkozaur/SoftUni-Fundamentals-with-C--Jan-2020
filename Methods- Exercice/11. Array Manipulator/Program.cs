@@ -78,7 +78,9 @@ namespace _11._Array_Manipulator
                         }
 
                         evenOrOdd = splittedInput[2];
-                        elementsToPrint = ReturnLastCountElements(count, evenOrOdd);
+                        elementsToPrint = ReturnLastCountElements(count, evenOrOdd)
+                            .Reverse()
+                            .ToArray();
                         if (elementsToPrint.Any())
                         {
                             elementsToPrint = elementsToPrint
