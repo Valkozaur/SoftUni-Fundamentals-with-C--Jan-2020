@@ -23,7 +23,7 @@ namespace _10.__SoftUni_Course_Planning
                 }
 
                 var lessonTitle = commandArgs[1];
-                var exerciceTitle = $"{lessonTitle}-Exercice";
+                var exerciceTitle = $"{lessonTitle}-Exercise";
 
                 switch (command)
                 {
@@ -45,7 +45,7 @@ namespace _10.__SoftUni_Course_Planning
 
                     case "Swap":
                         var secondLessonTitle = commandArgs[2];
-                        exerciceTitle = SwapLessons(courses, lessonTitle, exerciceTitle, secondLessonTitle);
+                        SwapLessons(courses, lessonTitle, exerciceTitle, secondLessonTitle);
                         break;
 
                     case "Exercise":
@@ -61,7 +61,7 @@ namespace _10.__SoftUni_Course_Planning
             }
         }
 
-        private static string SwapLessons(List<string> courses, string lessonTitle, string exerciceTitle, string secondLessonTitle)
+        private static void SwapLessons(List<string> courses, string lessonTitle, string exerciceTitle, string secondLessonTitle)
         {
             if (LessonExists(courses, lessonTitle) && LessonExists(courses, secondLessonTitle))
             {
@@ -70,7 +70,7 @@ namespace _10.__SoftUni_Course_Planning
                 firstLessons.Add(lessonTitle);
                 courses[firstLessonIndex] = null;
 
-                if (IndexIsValid(courses, firstLessonIndex + 1) && courses[firstLessonIndex + 1] == exerciceTitle)
+                if (IndexIsValid(courses, firstLessonIndex + 1) && LessonExists(courses, exerciceTitle))
                 {
                     firstLessons.Add(exerciceTitle);
                     courses[firstLessonIndex + 1] = null;
@@ -81,8 +81,8 @@ namespace _10.__SoftUni_Course_Planning
                 secondLessons.Add(secondLessonTitle);
                 courses[secondLessonIndex] = null;
 
-                exerciceTitle = $"{secondLessonTitle}-Exercice";
-                if (IndexIsValid(courses, secondLessonIndex + 1) && courses[secondLessonIndex + 1] == exerciceTitle)
+                exerciceTitle = $"{secondLessonTitle}-Exercise";
+                if (IndexIsValid(courses, secondLessonIndex + 1) && LessonExists(courses, exerciceTitle))
                 {
                     secondLessons.Add(exerciceTitle);
                     courses[secondLessonIndex + 1] = null;
@@ -92,8 +92,6 @@ namespace _10.__SoftUni_Course_Planning
                 courses.InsertRange(secondLessonIndex + secondLessons.Count, firstLessons);
                 courses.RemoveAll(x => x == null);
             }
-
-            return exerciceTitle;
         }
 
         private static void InsertExercice(List<string> courses, string lessonTitle, string exerciceTitle)
