@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Warrior’s Quest", "1.Warrior’s Quest.csproj", "{E2DA9FD8-8ADA-474E-845C-8A976944EB76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2DA9FD8-8ADA-474E-845C-8A976944EB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DA9FD8-8ADA-474E-845C-8A976944EB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DA9FD8-8ADA-474E-845C-8A976944EB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DA9FD8-8ADA-474E-845C-8A976944EB76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B686E18-0A8D-4990-BB54-C3408206E493}
+	EndGlobalSection
+EndGlobal
